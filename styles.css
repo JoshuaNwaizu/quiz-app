@@ -5,8 +5,9 @@
     --header-height: 3.5rem;
     /**=============== Colors ===============**/
     /**Color mode HSL(hue, saturation, lightness) */
-    --first-color: #332941;
-    --title-color: #3cc4a5;
+    --first-color: #030730d0;
+    --first-color-alt:  #692cd300;
+    --title-color: #6df6d6;
     --text-color: #555555;
     --white-color: #FFFFFF;
     --body-color: #f4f4f4;
@@ -50,4 +51,131 @@
     /*=============== z - index ===============*/
     --z-tooltip: 10;
     --z-fixed: 100;
+}
+
+/*=============== Reusable Css Classes ===============*/
+.container {
+    max-width: 1120px;
+    margin-inline: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: var(--mb-1-5);
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title-alt {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--first-color-alt);
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section__title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-1-5);
+    text-align: center;
+}
+
+
+.main {
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input,
+button,
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--first-color);
+    color: var(--text-color);
+    transition: .3s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--font-weight-bold);
+}
+
+/*=============== HEADER AND NAV ===============*/
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.toggle__icons {
+    color: var(--title-color);
+    transition: color .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+/**Navigation for mobile devices */
+@media screen and (max-width: 950px) {
+/**************** Nav icons *******************/
+    .toggle__icons {
+        position: fixed;
+        top: 2rem;
+        right: 0;
+        font-size: 1.5rem;
+    }
+
+    .toggle__box {
+        display: flex;
+        align-items: center;
+        height: 1.5rem;
+        border: 2px solid white;
+        width: 2.5rem;
+        border-radius: 12px;
+        background: #9d25d0;
+    }
+
+    .toggle__circle {
+        height: 1.1rem;
+        width: 1.1rem;
+        margin-left: .2rem;
+        background: white;
+        border-radius: 50%;
+    }
 }
