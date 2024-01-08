@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap');
+
+/**=============== VARAIBLE CSS ===============**/
+:root {
+    --header-height: 3.5rem;
+    /**=============== Colors ===============**/
+    /**Color mode HSL(hue, saturation, lightness) */
+    --first-color: #332941;
+    --title-color: #3cc4a5;
+    --text-color: #555555;
+    --white-color: #FFFFFF;
+    --body-color: #f4f4f4;
+    --first-color-light: #6ce278;
+    --container-color: #ffffff;
+    --box-shadow: 0 2px 16px #00000019;
+
+    /**=============== Font and typography ===============**/
+    /** .5rem = 8px | 1rem = 16px .... */
+    --body-font: 'Poppins', sans-serif;
+    --body-font-alt: 'Josefin Sans', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --bigger-font-size: 2rem;
+    --big-font-size: 1.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.2rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .94rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --smallest-font-size: .7rem;
+
+
+    /*=============== Margins bottom ===============*/
+    --mb-0-5: .5rem;
+    --mb-0-75: .75ren;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    --mb-3-5: 3.5rem;
+    --mb-4: 4rem;
+
+    /*=============== Font weight ===============*/
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+
+    /*=============== z - index ===============*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
