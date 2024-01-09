@@ -140,7 +140,7 @@ h4 {
     height: var(--header-height);
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-direction: row;
 }
 
@@ -154,7 +154,6 @@ h4 {
     column-gap: 1rem;
 }
 
-/**Navigation for mobile devices */
 @media screen and (max-width: 950px) {
 
     /**************** Nav icons *******************/
@@ -181,47 +180,5 @@ h4 {
         margin-left: .2rem;
         background: white;
         border-radius: 50%;
-    }
-    .toggle__icons i,
-    .toggle__box {
-        cursor: pointer;
-    }
-
-    /**************** HOME *******************/
-    .home__title {
-        font-size: var(--biggest-font-size);
-        font-weight: var(--font-weight-regular);
-        margin-bottom: 1rem;
-    }
-
-    .home__title span {
-        font-weight: var(--font-weight-bold);
-    }
-
-    .home__options {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1rem;
-    }
-
-    .option__list {
-        display: flex;
-        background-color: #0205208e;
-        padding: 1rem 2.5rem;
-        gap: .5rem;
-        color: var(--title-color);
-        border-radius: 1rem;
-        cursor: pointer;
-    }
-    .option__list span {
-        background: #ffffffe5;
-        padding: .2rem .5rem;
-        color: var(--first-color);
-        border-radius: 7px;
-        font-weight: var(--font-weight-bold);
-        font-size: var(--h2-font-size);
-    }
-    .option__text {
-        padding: .3rem;
     }
 }

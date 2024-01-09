@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
-     <!--=============== CSS ===============-->
+    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="styles.css">
     <title>Quiz App</title>
 </head>
+
 <body>
- <main class="main section" id="main">
-    <header class="header">
-        <nav class="nav container">
-            <div class="toggle__icons container">
-                <i class="ri-sun-line"></i>
-                <div class="toggle__box">
-                    <div class="toggle__circle"></div>
+    <main class="main section" id="main">
+        <header class="header">
+            <nav class="nav container">
+                <div class="toggle__icons container">
+                    <i class="ri-sun-line sun"></i>
+                    <div class="toggle__box">
+                        <div class="toggle__circle"></div>
+                    </div>
+                    <i class="ri-moon-line moon"></i>
                 </div>
-                <i class="ri-moon-line"></i>
+            </nav>
+        </header>
+
+        <section class="section container grid">
+            <div class="home__container container">
+                <h1 class="home__title">Welcome to the <span>Frontend Quiz</span></h1>
+                <p class="home__description">Pick the subject to get started</p>
             </div>
-        </nav>
-    </header>
- </main>
+
+            <div class="home__options">
+                <div class="option__list">
+                    <span><i class="ri-html5-line"></i></span>
+                    <p class="option__text">HTML</p>
+                </div>
+
+                <div class="option__list">
+                    <span><i class="ri-css3-line"></i></span>
+                    <p class="option__text">CSS</p>
+                </div>
+
+                <div class="option__list">
+                    <span><i class="ri-code-s-slash-line"></i></span>
+                    <p class="option__text">JavaScript</p>
+                </div>
+
+                <div class="option__list">
+                    <span> <i class="ri-book-open-line"></i></span>
+                    <p class="option__text">General Knowledge</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
 
     <script type="module" src="index.js"></script>
 </body>
+
 </html>
