@@ -154,8 +154,7 @@ h4 {
     column-gap: 1rem;
 }
 
-/**Navigation for mobile devices */
-@media screen and (max-width: 950px) {
+
 
     /**************** Nav icons *******************/
     .toggle__icons {
@@ -224,4 +223,3 @@ h4 {
     .option__text {
         padding: .3rem;
     }
-}
