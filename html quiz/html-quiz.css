@@ -113,9 +113,7 @@ body {
     background-color: var(--first-color);
     color: var(--text-color);
     transition: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  ;
 }
 
 h1,
