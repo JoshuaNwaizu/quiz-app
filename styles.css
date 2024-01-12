@@ -8,6 +8,7 @@
     --first-color: #020520d0;
     --first-color-alt: #d757f100;
     --title-color: #6df6d6;
+    --option-color: #0205208e;
     --text-color: #e3d9d9;
     --white-color: #FFFFFF;
     --body-color: #f4f4f4;
@@ -205,13 +206,29 @@ h4 {
 
     .option__list {
         display: flex;
-        background-color: #0205208e;
+        background-color: var(--option-color);
         padding: 1rem 2.5rem;
+        align-items: center;
         gap: .5rem;
         color: var(--title-color);
         border-radius: 1rem;
         cursor: pointer;
+        transition: .3s;
     }
+    .option__list:hover {
+        background-color: var(--title-color);
+    }
+    
+    .option__list:hover span {
+        color: var(--white-color);
+        background-color: var(--option-color);
+    }
+    .option__list:hover .option__text {
+        color: var(--option-color);
+        font-weight: var(--font-weight-medium);
+    }
+    
+    
     .option__list span {
         background: #ffffffe5;
         padding: .2rem .5rem;
@@ -222,4 +239,5 @@ h4 {
     }
     .option__text {
         padding: .3rem;
+        width: 100%;
     }

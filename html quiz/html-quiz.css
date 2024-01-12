@@ -7,6 +7,7 @@
     /**Color mode HSL(hue, saturation, lightness) */
     --first-color: #020520d0;
     --first-color-alt: #d757f100;
+    --option-color: #0205208e;
     --title-color: #6df6d6;
     --text-color: #e3d9d9;
     --white-color: #FFFFFF;
@@ -112,8 +113,8 @@ body {
 body {
     background-color: var(--first-color);
     color: var(--text-color);
-    transition: .3s;
-  ;
+    transition: .4s;
+    
 }
 
 h1,
@@ -198,13 +199,26 @@ h4 {
 
 .html__options-list {
     display: flex;
-    background-color: #0205208e;
+    background-color: var(--option-color);
     padding: 1rem 2.5rem;
     gap: .5rem;
     color: var(--title-color);
+    align-items: center;
+    column-gap: .5rem;
     border-radius: 1rem;
     cursor: pointer;
+    transition: .3s;
 }
+
+.html__options-list:hover {
+    background-color: var(--title-color);
+}
+
+.html__options-list:hover .html__choice-prefix {
+    color: var(--white-color);
+    background-color: var(--option-color);
+}
+
 
 .html__options-list .html__choice-prefix {
     background: #ffffffe5;
@@ -215,6 +229,12 @@ h4 {
     font-size: var(--h2-font-size);
 }
 
+.html__options-list:hover .html__choice-text {
+    color: var(--option-color);
+    font-weight: var(--font-weight-medium);
+}
+
 .html__choice-text {
     padding: .3rem;
+    width: 100%;
 }
