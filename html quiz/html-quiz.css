@@ -86,11 +86,14 @@
 
 
 .main {
+    display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
 
 }
+
+
 
 /*=============== BASE ===============*/
 * {
@@ -114,7 +117,6 @@ body {
     background-color: var(--first-color);
     color: var(--text-color);
     transition: .4s;
-    
 }
 
 h1,
@@ -165,11 +167,13 @@ h4 {
 .toggle__box {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     height: 1.5rem;
     border: 2px solid white;
     width: 2.5rem;
     border-radius: 12px;
     background: #9d25d0;
+    border: 3px solid var(--first-color-light);
     cursor: pointer;
 }
 
@@ -190,7 +194,13 @@ h4 {
     font-weight: var(--font-weight-bold);
     margin-top: 1rem;
 }
-
+.score__questions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: var(--font-weight-bold);
+}
 .html__options {
     display: flex;
     flex-direction: column;
@@ -210,6 +220,17 @@ h4 {
     transition: .3s;
 }
 
+.html__options-list .html__choice-prefix {
+    background: #ffffffe5;
+    padding: .2rem .7rem;
+    color: var(--first-color);
+    border-radius: 7px;
+    font-weight: var(--font-weight-bold);
+    margin-left: -1rem;
+    font-size: var(--h2-font-size);
+}
+
+/*
 .html__options-list:hover {
     background-color: var(--title-color);
 }
@@ -220,21 +241,49 @@ h4 {
 }
 
 
-.html__options-list .html__choice-prefix {
-    background: #ffffffe5;
-    padding: .2rem .7rem;
-    color: var(--first-color);
-    border-radius: 7px;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--h2-font-size);
-}
 
 .html__options-list:hover .html__choice-text {
     color: var(--option-color);
     font-weight: var(--font-weight-medium);
 }
-
+*/
 .html__choice-text {
     padding: .3rem;
     width: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background: #9d25d0;
+    outline: none;
+    border: none;
+    color: var(--title-color);
+    border-radius: .5rem;
+}
+
+.correct {
+    background-color: var(--title-color)
+}
+
+.incorrect {
+    background-color: red;
+}
+
+
+.correct .html__choice-prefix {
+    color: var(--white-color);
+    background-color: var(--option-color);
+}
+
+
+
+.correct .html__choice-text {
+    color: var(--option-color);
+    font-weight: var(--font-weight-medium);
 }

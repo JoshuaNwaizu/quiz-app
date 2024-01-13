@@ -1,7 +1,10 @@
-const questions = document.getElementById('html-question')
-const choices = Array.from(document.querySelectorAll('.html__choice-text')),
+const questions = document.getElementById('html-question'),
+    choices = Array.from(document.querySelectorAll('.html__choice-text')),
     choicePrefix = document.querySelector('.html__choice-prefix'),
-    optionList = document.querySelector('.html__options-list')
+    optionList = document.querySelector('.html__options-list'),
+    buttonBackToMenu = document.querySelector('.button'),
+    questionHtmlCounter = document.querySelector('.html__question-counter'),
+    scoreCounter = document.querySelector('.html__score')
 
 
 let currentQuestion = {}
@@ -85,7 +88,6 @@ const htmlQuestions = [
 ];
 
 //GAME FUNCTIONS
-
 const CORRECT_BONUS = 10
 const MAX_QUESTIONS = 7
 const startGame = () => {
@@ -94,14 +96,15 @@ const startGame = () => {
     availableQuestions = [...htmlQuestions]
     getNewQuestions()
 }
-console.log(availableQuestions)
 
 const getNewQuestions = () => {
-    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-      return window.location.assign('./end.html')
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        return window.location.assign('index.html')
     }
 
     questionCounter++
+
+    questionHtmlCounter.innerText = ` ${questionCounter} of ${MAX_QUESTIONS}`
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex]
     questions.innerText = currentQuestion.question
@@ -109,23 +112,45 @@ const getNewQuestions = () => {
     choices.forEach((choice, index) => {
         const optionKey = 'option' + (index + 1);
         choice.innerText = currentQuestion.options[optionKey];
-        console.log(choice.innerText)
     });
     availableQuestions.splice(questionIndex, 1)
     takingAnswers = true
 }
 
-choices.forEach((choice, index) => {
+choices.forEach((choice) => {
     choice.addEventListener('click', e => {
         if (!takingAnswers) return
 
         takingAnswers = false
         const selectedChoice = e.target
-        const selectedAnswer = index + 1
-        console.log(selectedAnswer)
-        getNewQuestions()
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        if (classToApply === 'correct') {
+            incrementScore(CORRECT_BONUS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestions()
+
+        }, 1000);
     })
 })
 
-
 startGame()
+
+const incrementScore = num => {
+    score += num
+    scoreCounter.innerText = `Score: ${score}`
+
+}
+
+buttonBackToMenu.addEventListener('click', handleClickButton)
+
+function handleClickButton() {
+    return window.location.assign('index.html')
+}
+
