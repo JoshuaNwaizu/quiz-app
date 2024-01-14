@@ -171,12 +171,11 @@ h4 {
         display: flex;
         align-items: center;
         height: 1.5rem;
-        border: 2px solid white;
+        border: 3px solid var(--first-color-light);
         justify-content: flex-end;
         width: 2.5rem;
         border-radius: 12px;
         background: #9d25d0;
-        border: none;
     }
     
     .toggle__circle {

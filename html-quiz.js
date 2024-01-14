@@ -4,7 +4,8 @@ const questions = document.getElementById('html-question'),
     optionList = document.querySelector('.html__options-list'),
     buttonBackToMenu = document.querySelector('.button'),
     questionHtmlCounter = document.querySelector('.html__question-counter'),
-    scoreCounter = document.querySelector('.html__score')
+    scoreCounter = document.querySelector('.html__score'),
+    progressBarFull = document.querySelector('.html__progress-full')
 
 
 let currentQuestion = {}
@@ -104,7 +105,11 @@ const getNewQuestions = () => {
 
     questionCounter++
 
+
     questionHtmlCounter.innerText = ` ${questionCounter} of ${MAX_QUESTIONS}`
+
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS ) * 100}%`
+    
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex]
     questions.innerText = currentQuestion.question
