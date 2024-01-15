@@ -100,8 +100,11 @@ const startGame = () => {
 
 const getNewQuestions = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        return window.location.assign('index.html')
+        return window.location.assign('end.html')
     }
+        localStorage.setItem('mostRecentScore', score)
+        localStorage.setItem('questionCounter', questionCounter)
+        localStorage.setItem('MAX_QUESTIONS', MAX_QUESTIONS)
 
     questionCounter++
 

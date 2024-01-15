@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== REMIX ICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="styles.css">
     <title>Quiz Summary </title>
 </head>
 <body>
-    
+    <main class="main" id="main">
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <h1>End</h1>
+                </div>
+                <div class="toggle__icons container">
+                    <i class="ri-sun-line"></i>
+                    <div class="toggle__box">
+                        <div class="toggle__circle"></div>
+                    </div>
+                    <i class="ri-moon-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <section class="section container grid ">
+            <div class="end__heading">
+              <h1 class="end__heading-text">Quiz Completed <span>You scored...</span></h1>  
+            </div>
+            <div class="score__output">
+                <h3 class="score__heading">Frontend</h3>
+                <h1 class="score">7</h1>
+                <p class="score__remains">out of 10</p>
+            </div>
+            <button class="btn end-btn">Play Again</button>
+        </section>
+    </main>
+
+    <script type="module" src="end.js"></script>
 </body>
 </html>
