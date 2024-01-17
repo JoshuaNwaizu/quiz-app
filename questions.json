@@ -218,5 +218,185 @@
       "option4": "All-Purpose Interaction"
     },
     "answer": "1"
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": {
+      "option1": "Counter Strike: Source",
+      "option2": "Computer Style Sheets",
+      "option3": "Creative Style System",
+      "option4": "Cascading Style Sheets"
+    },
+    "answer": "4"
+  },
+  {
+    "question": "In JavaScript, what is the purpose of the 'document.getElementById()' function?",
+    "options": {
+      "option1": "To access an HTML element by its class",
+      "option2": "To access an HTML element by its ID",
+      "option3": "To access an HTML element by its tag name",
+      "option4": "To access an HTML element by its name attribute"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What is the correct way to link an external CSS file to an HTML document?",
+    "options": {
+      "option1": "<link rel='stylesheet' type='text/css' href='styles.css'>",
+      "option2": "<style src='styles.css'>",
+      "option3": "<css link='styles.css'>",
+      "option4": "<stylesheet>styles.css</stylesheet>"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "Which of the following is a CSS preprocessor?",
+    "options": {
+      "option1": "Bootstrap",
+      "option2": "Sass",
+      "option3": "React",
+      "option4": "jQuery"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the acronym API stand for?",
+    "options": {
+      "option1": "Application Programming Interface",
+      "option2": "Advanced Programming Integration",
+      "option3": "Automated Program Interaction",
+      "option4": "All-Purpose Interaction"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What is the box model in CSS used for?",
+    "options": {
+      "option1": "Designing 3D shapes",
+      "option2": "Creating layouts with boxes",
+      "option3": "Drawing complex illustrations",
+      "option4": "Managing database schemas"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "Which HTML element is used to define the structure of an HTML document?",
+    "options": {
+      "option1": "<head>",
+      "option2": "<body>",
+      "option3": "<html>",
+      "option4": "<div>"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What does the term 'AJAX' stand for in web development?",
+    "options": {
+      "option1": "Asynchronous JavaScript and XML",
+      "option2": "Automated JavaScript and XML",
+      "option3": "Advanced JSON and XML",
+      "option4": "All JavaScript and XML"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What is the purpose of the JavaScript 'typeof' operator?",
+    "options": {
+      "option1": "To check the data type of a variable",
+      "option2": "To create a new variable",
+      "option3": "To define a function",
+      "option4": "To perform arithmetic operations"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "Which CSS property is used for controlling the layout flow of a document?",
+    "options": {
+      "option1": "margin",
+      "option2": "display",
+      "option3": "padding",
+      "option4": "position"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What is the purpose of the 'addEventListener' method in JavaScript?",
+    "options": {
+      "option1": "To add style to an element",
+      "option2": "To listen for events and execute a function",
+      "option3": "To create a new HTML element",
+      "option4": "To perform mathematical calculations"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "Which JavaScript data type is not primitive?",
+    "options": {
+      "option1": "String",
+      "option2": "Number",
+      "option3": "Object",
+      "option4": "Boolean"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What is the purpose of the 'flexbox' layout in CSS?",
+    "options": {
+      "option1": "To create animations",
+      "option2": "To design responsive layouts",
+      "option3": "To define color schemes",
+      "option4": "To handle server requests"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "Which HTML element is used for creating a hyperlink?",
+    "options": {
+      "option1": "<a>",
+      "option2": "<link>",
+      "option3": "<h1>",
+      "option4": "<p>"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What is the purpose of the JavaScript 'splice' method?",
+    "options": {
+      "option1": "To add elements to an array",
+      "option2": "To remove elements from an array",
+      "option3": "To sort the elements of an array",
+      "option4": "To reverse the order of an array"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "In CSS, what does the 'box-sizing' property control?",
+    "options": {
+      "option1": "The size of the text box",
+      "option2": "The size of the border box",
+      "option3": "The size of the margin box",
+      "option4": "The size of the padding box"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "Which JavaScript keyword is used to declare a variable?",
+    "options": {
+      "option1": "let",
+      "option2": "const",
+      "option3": "var",
+      "option4": "variable"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "What is the purpose of the HTML 'form' element?",
+    "options": {
+      "option1": "To create tables",
+      "option2": "To define a section in the document",
+      "option3": "To create a hyperlink",
+      "option4": "To create a user input form"
+    },
+    "answer": "4"
   }
 ]

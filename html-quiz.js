@@ -23,15 +23,18 @@ fetch('questions.json')
     })
     .then(loadedQuestions => {
         console.log(loadedQuestions)
+        console.log(loadedQuestions.length);
 
         htmlQuestions = loadedQuestions
+        MAX_QUESTIONS = htmlQuestions.length
+        console.log(MAX_QUESTIONS)
         startGame()
-
-        
     })
 //GAME FUNCTIONS
 const CORRECT_BONUS = 10
-const MAX_QUESTIONS = Object.keys(htmlQuestions).length
+let htmlQuestionsIndex = htmlQuestions.length
+let MAX_QUESTIONS;
+console.log(MAX_QUESTIONS)
 const startGame = () => {
     questionCounter = 0
     score = 0

@@ -1,11 +1,9 @@
 
 
-const optionListItem = Array.from(document.querySelectorAll('.option__list'))
+const optionListItem = document.querySelector('.option__list')
 
 function handleClick() {
     return window.location.assign('./html-quiz.html')
 }
 
-optionListItem.forEach(options => (
-    options.addEventListener('click', handleClick)
-))
+optionListItem.addEventListener('click', handleClick)
