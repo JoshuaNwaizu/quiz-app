@@ -8,6 +8,7 @@ const mostRecentScore = localStorage.getItem('mostRecentScore'),
 questionCounter = localStorage.getItem('questionCounter'),
 finalScoreText = localStorage.getItem('finalScore')
 
+
 const theFinalText = parseInt(finalScoreText) + 1
 scoreRemains.innerText = `Got ${theFinalText} out of ${MAX_QUESTIONS} questions`
 finalScore.innerText = mostRecentScore

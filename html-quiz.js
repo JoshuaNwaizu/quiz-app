@@ -15,87 +15,27 @@ let questionCounter = 0
 let availableQuestions = []
 let finalScore = 0
 
-const htmlQuestions = [
+let htmlQuestions = [];
+fetch('questions.json')
+    .then(res => {
+        console.log(res)
+        return res.json()
+    })
+    .then(loadedQuestions => {
+        console.log(loadedQuestions)
 
-    {
-        question: "What does HTML stand for?",
-        options: {
-            option1: "Hyper Text Markup Language",
-            option2: "High-Level Text Management Language",
-            option3: "Hyper Transfer Text Language",
-            option4: "Hyperlink and Text Management Language",
-        },
-        answer: "1"
-    },
-    {
-        question: "Which tag is used to define an unordered list in HTML?",
-        options: {
-            option1: "<ul>",
-            option2: "<ol>",
-            option3: "<li>",
-            option4: "<ul></ul>",
-        },
-        answer: "1"
-    },
-    {
-        question: "What is the purpose of the HTML <head> tag?",
-        options: {
-            option1: "It defines the main content of the document.",
-            option2: "It contains metadata about the document.",
-            option3: "It defines a header for the document.",
-            option4: "It represents a paragraph in HTML.",
-        },
-        answer: "2"
-    },
-    {
-        question: "Which attribute is used to provide additional information about an HTML element?",
-        options: {
-            option1: "class",
-            option2: "style",
-            option3: "id",
-            option4: "title",
-        },
-        answer: "4"
-    },
-    {
-        question: "In HTML, what does the acronym 'URL' stand for?",
-        options: {
-            option1: "Uniform Resource Locator",
-            option2: "Universal Reference Language",
-            option3: "Unified Resource Link",
-            option4: "User Reference Locator",
-        },
-        answer: "1"
-    },
-    {
-        question: "Which HTML tag is used to create a hyperlink?",
-        options: {
-            option1: "<a>",
-            option2: "<link>",
-            option3: "<hyperlink>",
-            option4: "<url>",
-        },
-        answer: "1"
-    },
-    {
-        question: "What is the purpose of the HTML <footer> tag?",
-        options: {
-            option1: "It defines a section in the document.",
-            option2: "It represents the main content of the document.",
-            option3: "It contains metadata about the document.",
-            option4: "It defines a footer for the document.",
-        },
-        answer: "4"
-    }
-];
+        htmlQuestions = loadedQuestions
+        startGame()
 
+        
+    })
 //GAME FUNCTIONS
 const CORRECT_BONUS = 10
-const MAX_QUESTIONS = 7
+const MAX_QUESTIONS = Object.keys(htmlQuestions).length
 const startGame = () => {
     questionCounter = 0
     score = 0
-  
+
     availableQuestions = [...htmlQuestions]
     getNewQuestions()
 }
@@ -112,7 +52,7 @@ const getNewQuestions = () => {
     questionCounter++
 
     let progressCount = questionCounter - 1
-    
+
     questionHtmlCounter.innerText = ` ${questionCounter} of ${MAX_QUESTIONS}`
 
     progressBarFull.style.width = `${(progressCount / MAX_QUESTIONS) * 100}%`
@@ -141,7 +81,7 @@ choices.forEach((choice) => {
         if (classToApply === 'correct') {
             incrementScore(CORRECT_BONUS)
             incrementFinal(1)
-            
+
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
@@ -154,7 +94,6 @@ choices.forEach((choice) => {
     })
 })
 
-startGame()
 
 const incrementScore = num => {
     score += num
