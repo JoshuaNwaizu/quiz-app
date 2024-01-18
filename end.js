@@ -1,12 +1,12 @@
 const finalScore = document.querySelector('.score'),
-scoreRemains = document.querySelector('.score__remains'),
-button = document.querySelector('.end-btn')
+    scoreRemains = document.querySelector('.score__remains'),
+    button = document.querySelector('.end-btn')
 
 
 const mostRecentScore = localStorage.getItem('mostRecentScore'),
- MAX_QUESTIONS = localStorage.getItem('MAX_QUESTIONS'),
-questionCounter = localStorage.getItem('questionCounter'),
-finalScoreText = localStorage.getItem('finalScore')
+    MAX_QUESTIONS = localStorage.getItem('MAX_QUESTIONS'),
+    questionCounter = localStorage.getItem('questionCounter'),
+    finalScoreText = localStorage.getItem('finalScore')
 
 
 const theFinalText = parseInt(finalScoreText) + 1
