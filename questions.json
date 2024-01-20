@@ -99,16 +99,7 @@
     },
     "answer": "1"
   },
-  {
-    "question": "What is the purpose of the 'document.getElementById' method in JavaScript?",
-    "options": {
-      "option1": "To create a new element",
-      "option2": "To retrieve an HTML element by its id",
-      "option3": "To append a child element",
-      "option4": "To remove an element from the DOM"
-    },
-    "answer": "2"
-  },
+
   {
     "question": "Which React method is called after a component is rendered for the first time?",
     "options": {
@@ -179,26 +170,7 @@
     },
     "answer": "4"
   },
-  {
-    "question": "In JavaScript, what is the purpose of the 'document.getElementById()' function?",
-    "options": {
-      "option1": "To access an HTML element by its class",
-      "option2": "To access an HTML element by its ID",
-      "option3": "To access an HTML element by its tag name",
-      "option4": "To access an HTML element by its name attribute"
-    },
-    "answer": "2"
-  },
-  {
-    "question": "What is the correct way to link an external CSS file to an HTML document?",
-    "options": {
-      "option1": "<link rel='stylesheet' type='text/css' href='styles.css'>",
-      "option2": "<style src='styles.css'>",
-      "option3": "<css link='styles.css'>",
-      "option4": "<stylesheet>styles.css</stylesheet>"
-    },
-    "answer": "1"
-  },
+  
   {
     "question": "Which of the following is a CSS preprocessor?",
     "options": {

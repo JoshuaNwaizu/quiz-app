@@ -368,9 +368,7 @@ h4 {
 }
 
 @media screen and (min-width: 540px) {
-    body {
-        background: red;
-    }
+  
 
     .option__list {
         display: flex;
@@ -412,15 +410,32 @@ h4 {
 }
 
 @media screen and (min-width: 778px) {
-    body {
-        background: green;
-    }
+   
 
     .html-home {
         margin-top: 7rem;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-self: center;
-        gap: 4rem;
+       text-align: center;
     }
+    .home__title {
+        font-size: 4rem;
+    }
+    .home__description {
+        font-size: var(--h2-font-size);
+    }
+    .home__options {
+        width: 800px;
+        display: flex;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .option__list {
+        width: 300px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
 }
