@@ -119,6 +119,7 @@ body {
     transition: .4s;
     display: flex;
     align-items: center;
+   
     justify-content: center;
 }
 
@@ -246,7 +247,7 @@ h4 {
     .html__options-list {
         display: flex;
         background-color: var(--option-color);
-        padding: 1rem 2.5rem;
+        padding: 1rem 2rem;
         gap: .5rem;
         color: var(--title-color);
         align-items: center;
@@ -265,31 +266,43 @@ h4 {
         margin-left: -1rem;
         font-size: var(--h2-font-size);
     }
+
     .progress__progress-questions {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
     }
 
-    /*
-.html__options-list:hover {
-    background-color: var(--title-color);
-}
+    .hidden {
+        display: none;
+    }
 
-.html__options-list:hover .html__choice-prefix {
-    color: var(--white-color);
-    background-color: var(--option-color);
-}
+    .loader {
+        border: 1.6rem solid var(--first-color-light);
+        border-top: 1.6rem solid #020520;
+        border-radius: 50%;
+        width: 12rem;
+        height: 12rem;
+        animation: spin 1.55s linear infinite;
+    }
 
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
 
+        100% {
+            transform: rotate(360deg);
+        }
 
-.html__options-list:hover .html__choice-text {
-    color: var(--option-color);
-    font-weight: var(--font-weight-medium);
-}
-*/
+    }
+    .the__game-container  {
+        margin-top: -2rem;
+    }
+
     .html__choice-text {
         padding: .3rem;
+        font-size: var(--small-font-size);
         width: 100%;
     }
 
@@ -394,6 +407,7 @@ h4 {
         margin-left: -1rem;
         font-size: var(--h2-font-size);
     }
+
     .html__choice-text {
         padding: .3rem;
     }

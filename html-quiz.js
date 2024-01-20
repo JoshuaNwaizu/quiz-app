@@ -5,7 +5,9 @@ const questions = document.getElementById('html-question'),
     buttonBackToMenu = document.querySelector('.button'),
     questionHtmlCounter = document.querySelector('.html__question-counter'),
     scoreCounter = document.querySelector('.html__score'),
-    progressBarFull = document.querySelector('.html__progress-full')
+    progressBarFull = document.querySelector('.html__progress-full'),
+    loader = document.querySelector('.loader'),
+    game = document.querySelector('.the__game-container')
 
 function scrollHeader() {
     const header = document.getElementById('header')
@@ -36,8 +38,10 @@ fetch('questions.json')
         htmlQuestions = loadedQuestions
         MAX_QUESTIONS = htmlQuestions.length
         console.log(MAX_QUESTIONS)
+       
         startGame()
     })
+
 //GAME FUNCTIONS
 const CORRECT_BONUS = 10
 let htmlQuestionsIndex = htmlQuestions.length
@@ -49,6 +53,8 @@ const startGame = () => {
 
     availableQuestions = [...htmlQuestions]
     getNewQuestions()
+    game.classList.remove('hidden')
+    loader.classList.add('hidden')
 }
 
 const getNewQuestions = () => {
