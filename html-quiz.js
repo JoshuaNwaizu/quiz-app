@@ -7,13 +7,13 @@ const questions = document.getElementById('html-question'),
     scoreCounter = document.querySelector('.html__score'),
     progressBarFull = document.querySelector('.html__progress-full')
 
-    function scrollHeader() {
-        const header = document.getElementById('header')
-        // When the scroll is greater than 50 viewport height, add the bg-header class to the header tag
-        if (this.scrollY >= 50) header.classList.add('bg-header'); else header.classList.remove('bg-header')
-    }
-    window.addEventListener('scroll', scrollHeader)
-    
+function scrollHeader() {
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the bg-header class to the header tag
+    if (this.scrollY >= 50) header.classList.add('bg-header'); else header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
 
 
 let currentQuestion = {}

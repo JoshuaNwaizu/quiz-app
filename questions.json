@@ -99,7 +99,6 @@
     },
     "answer": "1"
   },
-
   {
     "question": "Which React method is called after a component is rendered for the first time?",
     "options": {
@@ -170,7 +169,6 @@
     },
     "answer": "4"
   },
-  
   {
     "question": "Which of the following is a CSS preprocessor?",
     "options": {
@@ -180,6 +178,56 @@
       "option4": "jQuery"
     },
     "answer": "2"
+  },
+  {
+    "question": "What does the CSS property `flex` stand for?",
+    "options": {
+      "option1": "Flexible",
+      "option2": "Flexbox",
+      "option3": "Float Extension",
+      "option4": "Flexibility"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "In JavaScript, what is the purpose of the `addEventListener` method?",
+    "options": {
+      "option1": "To add style to an element",
+      "option2": "To attach an event handler function to an HTML element",
+      "option3": "To create a new HTML element",
+      "option4": "To remove an HTML element from the DOM"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "Which HTML tag is used to embed an external web page within the current page?",
+    "options": {
+      "option1": "<iframe>",
+      "option2": "<embed>",
+      "option3": "<object>",
+      "option4": "<include>"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What does the acronym API stand for in the context of web development?",
+    "options": {
+      "option1": "Application Programming Interface",
+      "option2": "Advanced Programming Integration",
+      "option3": "Automated Program Interaction",
+      "option4": "All-Purpose Interaction"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "Which of the following is a valid CSS pseudo-class for styling the first child element?",
+    "options": {
+      "option1": ":first-child",
+      "option2": ":first-element",
+      "option3": ":first-of-type",
+      "option4": ":child-first"
+    },
+    "answer": "1"
   },
   {
     "question": "What does the acronym API stand for?",

@@ -11,7 +11,7 @@ const mostRecentScore = localStorage.getItem('mostRecentScore'),
 
 const theFinalText = parseInt(finalScoreText) + 1
 scoreRemains.innerText = `Got ${theFinalText} out of ${MAX_QUESTIONS} questions`
-finalScore.innerText = mostRecentScore
+finalScore.innerText = parseInt(mostRecentScore) + 10
 
 
 function handleClick() {
