@@ -250,7 +250,7 @@
     "answer": "4"
   },
   {
-    "question": "In JavaScript, what is the purpose of the 'document.getElementById()' function?",
+    "question": "In JavaScript, what is the purpose of the 'getElementById()' function?",
     "options": {
       "option1": "To access an HTML element by its class",
       "option2": "To access an HTML element by its ID",
