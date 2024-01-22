@@ -189,10 +189,7 @@ h4 {
         border-radius: 50%;
     }
 @media screen and (max-width: 950px) {
-
-  
-
-    .nav i {
+  .nav i {
         cursor: pointer;
     }
 
@@ -277,6 +274,11 @@ h4 {
 .hidden {
     display: none;
 }
+.progress-and-options {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
 
 .loader {
     border: 1.6rem solid var(--first-color-light);
@@ -302,7 +304,7 @@ h4 {
 }
 
 .the__game-container {
-    margin-top: -2rem;
+    margin-top: -6rem;
 }
 
 .html__choice-text {
@@ -455,6 +457,19 @@ h4 {
 
 }
 
-@media screen and (max-width: 1024px) {
-    
+@media screen and (min-width: 1024px) {
+    .nav {
+        margin-inline: 4.5rem;
+    }
+    .the__game-container {
+        display: flex;
+        column-gap: 2rem;
+    }
+    .progress-and-options,
+    .html__options {
+        width: 50%;
+    }
+    .html__options-list {
+        width: 100%;
+    }
 }
