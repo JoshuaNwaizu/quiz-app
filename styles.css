@@ -437,5 +437,28 @@ h4 {
 }
 
 @media screen and (min-width: 1024px) {
-    
+    .home__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-inline: 2rem;
+    }
+    .home__hero,.home__options {
+        width: 50%;
+    }
+    .option__list {
+        width: 90%;
+      
+    }
+}
+@media screen and (min-width: 1424px) {
+    .home__container {
+        
+        column-gap: 3rem;
+    }
+    .option__list {
+        width: 60%;
+      
+    }
 }

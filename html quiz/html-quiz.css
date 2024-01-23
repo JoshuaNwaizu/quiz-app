@@ -470,7 +470,7 @@ h4 {
     }
     .progress-and-options,
     .html__options {
-        width: 50%;
+        min-width: 50%;
     }
     .html__options-list {
         width: 100%;
