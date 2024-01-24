@@ -462,9 +462,7 @@ h4 {
 
 }
 @media screen and (min-width: 400px) {
-    body {
-        background-color: red;
-    }
+   
     .html__title {
         font-size: var(--h2-font-size);
     }
@@ -498,6 +496,10 @@ h4 {
     body {
         height: 70vh;
     }
+    .html__title {
+        font-size: var(--h1-font-size);
+    }
+
     .nav {
         margin-inline: 4.5rem;
     }
