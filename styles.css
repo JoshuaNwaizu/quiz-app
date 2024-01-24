@@ -191,6 +191,9 @@ h4 {
 .toggle__box {
     cursor: pointer;
 }
+.show-menu {
+    justify-content: flex-start;
+}
 
 @media screen and (max-width: 950px) {
 
@@ -210,6 +213,11 @@ h4 {
     }
 
     .home__options {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .home__container {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
