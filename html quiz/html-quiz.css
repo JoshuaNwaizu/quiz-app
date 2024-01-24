@@ -354,7 +354,7 @@ h4 {
 
 @media screen and (max-width: 320px) {
     .html__title {
-        font-size: var(--h2-font-size);
+        font-size: var(--h3-font-size);
         font-weight: var(--font-weight-bold);
         margin-top: .5rem;
     }
@@ -461,6 +461,38 @@ h4 {
     }
 
 }
+@media screen and (min-width: 400px) {
+    body {
+        background-color: red;
+    }
+    .html__title {
+        font-size: var(--h2-font-size);
+    }
+
+    .html__options {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+    .html__choice-text {
+        font-size: var(--smaller-font-size);
+    }
+
+    .html__options-list {
+        display: flex;
+        background-color: var(--option-color);
+        padding: 1rem 2.5rem;
+        gap: .5rem;
+        color: var(--title-color);
+        align-items: center;
+        column-gap: .5rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+}
+
 
 @media screen and (min-width: 1024px) {
     body {
