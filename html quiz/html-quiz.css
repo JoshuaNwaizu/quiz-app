@@ -279,7 +279,7 @@ h4 {
     flex-direction: column;
     row-gap: 1rem;
 }
-
+/*
 .loader {
     border: 1.6rem solid var(--first-color-light);
     border-top: 1.6rem solid #020520;
@@ -302,7 +302,7 @@ h4 {
     }
 
 }
-
+*/
 .the__game-container {
     margin-top: -6rem;
 }
@@ -316,18 +316,19 @@ h4 {
 .button {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: -1rem;
 }
 
-.btn {
+.btn, .skip {
     padding: .5rem 1rem;
     background: #9d25d0;
     outline: none;
     border: none;
     color: var(--title-color);
     border-radius: .5rem;
-    position: fixed;
-    bottom: 1.5rem;
+    font-size: var(--small-font-size);
+    
 }
 
 .correct {
@@ -353,6 +354,11 @@ h4 {
 
 
 @media screen and (max-width: 320px) {
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .html__title {
         font-size: var(--h3-font-size);
         font-weight: var(--font-weight-bold);
@@ -508,14 +514,28 @@ h4 {
         color: var(--option-color);
         font-weight: var(--font-weight-medium);
     }
+    
 
+}
+@media screen and (min-width: 700px) {
+    body {
+        height: 70vh;
+    }
+    .html__title {
+        font-size: var(--bigger-font-size);
+    }
+
+   
+    .html__choice-text {
+        font-size: var(--normal-font-size);
+    }
 
 }
 
 
 @media screen and (min-width: 1024px) {
     body {
-        height: 70vh;
+        height: 100vh;
     }
     .html__title {
         font-size: var(--h1-font-size);

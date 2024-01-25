@@ -9,9 +9,9 @@ const mostRecentScore = localStorage.getItem('mostRecentScore'),
     finalScoreText = localStorage.getItem('finalScore')
 
 
-const theFinalText = parseInt(finalScoreText) + 1
+const theFinalText = finalScoreText 
 scoreRemains.innerText = `Got ${theFinalText} out of ${MAX_QUESTIONS} questions`
-finalScore.innerText = parseInt(mostRecentScore) + 10
+finalScore.innerText = mostRecentScore
 
 
 function handleClick() {

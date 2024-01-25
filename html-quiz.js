@@ -2,12 +2,13 @@ const questions = document.getElementById('html-question'),
     choices = Array.from(document.querySelectorAll('.html__choice-text')),
     choicePrefix = document.querySelector('.html__choice-prefix'),
     optionList = document.querySelector('.html__options-list'),
-    buttonBackToMenu = document.querySelector('.button'),
+    buttonBackToMenu = document.querySelector('.btn'),
     questionHtmlCounter = document.querySelector('.html__question-counter'),
     scoreCounter = document.querySelector('.html__score'),
     progressBarFull = document.querySelector('.html__progress-full'),
     loader = document.querySelector('.loader'),
-    game = document.querySelector('.the__game-container')
+    game = document.querySelector('.the__game-container'),
+    skip = document.querySelector('.skip')
 
 function scrollHeader() {
     const header = document.getElementById('header')
@@ -28,7 +29,6 @@ let finalScore = 0
 let htmlQuestions = [];
 fetch('questions.json')
     .then(res => {
-        console.log(res)
         return res.json()
     })
     .then(loadedQuestions => {
@@ -37,7 +37,6 @@ fetch('questions.json')
 
         htmlQuestions = loadedQuestions
         MAX_QUESTIONS = htmlQuestions.length
-        console.log(MAX_QUESTIONS)
        
         startGame()
     })
@@ -130,3 +129,8 @@ function handleClickButton() {
     return window.location.assign('index.html')
 }
 
+skip.addEventListener('click', handleClickSkip)
+
+function handleClickSkip() {
+    return window.location.assign('end.html')
+}
