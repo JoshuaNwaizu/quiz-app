@@ -191,7 +191,7 @@ h4 {
 .toggle__box {
     cursor: pointer;
 }
-.show-menu {
+.toggle-icon {
     justify-content: flex-start;
 }
 
