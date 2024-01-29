@@ -73,12 +73,12 @@ body.dark {
    
 }
 .dark .html__progress {
-    background: var(--title-color);
+    background: var(--text-color);
    
 }
 .dark .html__progress-full {
     background-color: var(--first-color-alt);
-    border: 2px solid var(--title-color);
+    border: 2px solid var(--text-color);
 }
 .dark .html__options-list {
     background-color: var(--text-color);
