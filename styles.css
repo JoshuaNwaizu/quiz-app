@@ -53,6 +53,38 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+/*=============== VARIABLE DARK THEME ===============*/
+body.dark-theme {
+    --title-color: #020520d0;
+    --text-color: #aaaaaa;
+    --body-color: #000;
+    --container-color: hsl(0, 0%, 12%);
+    --box-shadow: 0 1px 11px hsla(0, 0%, 60%);
+    --white-color: hsl(0, 0%, 15%);
+    --first-color: #f4f4f4;
+}
+.dark-theme .option__list {
+    background-color: var(--text-color);
+    color: #000;
+   
+}
+.dark-theme .home__description {
+    color: #766f6f;
+}
+.dark-theme 
+.option__list span {
+    color: var(--title-color);
+
+   
+}
+.dark-theme .option__list:hover {
+    background-color: var(--text-color);
+    color: #000;
+
+}
+
+
+
 
 /*=============== Reusable Css Classes ===============*/
 .container {
@@ -234,7 +266,7 @@ h4 {
         border-radius: 1rem;
         cursor: pointer;
         transition: .3s;
-
+        
     }
 
     .option__list:hover {

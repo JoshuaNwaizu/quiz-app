@@ -8,7 +8,8 @@ const questions = document.getElementById('html-question'),
     progressBarFull = document.querySelector('.html__progress-full'),
     loader = document.querySelector('.loader'),
     game = document.querySelector('.the__game-container'),
-    skip = document.querySelector('.skip')
+    skip = document.querySelector('.skip'),
+    toggleBox = document.querySelector('.toggle__box')
 
 function scrollHeader() {
     const header = document.getElementById('header')
@@ -37,7 +38,7 @@ fetch('questions.json')
 
         htmlQuestions = loadedQuestions
         MAX_QUESTIONS = htmlQuestions.length
-       
+
         startGame()
     })
 
@@ -133,4 +134,16 @@ skip.addEventListener('click', handleClickSkip)
 
 function handleClickSkip() {
     return window.location.assign('end.html')
+}
+const darkTheme = 'dark-theme'
+const iconTheme = 'toggle-icon'
+
+const selectedThemeHtml = localStorage.getItem('selected-theme'),
+    selectedIconHtml = localStorage.getItem('selected-icon')
+
+if (selectedIconHtml) {
+    toggleBox.classList.toggle(selectedIconHtml)
+}
+if (selectedThemeHtml) {
+    document.body.classList.add(selectedThemeHtml)
 }

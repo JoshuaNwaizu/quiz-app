@@ -53,6 +53,61 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+/*=============== VARIABLE DARK THEME ===============*/
+body.dark {
+    --title-color: #020520d0;
+    --text-color: #aaaaaa;
+    --body-color: #000;
+    --container-color: hsl(0, 0%, 12%);
+    --box-shadow: 0 1px 11px hsla(0, 0%, 60%);
+    --white-color: hsl(0, 0%, 15%);
+    --first-color: #f4f4f4;
+    --first-color-light: #6ce278;
+
+}
+
+
+.dark
+.html__options-list span {
+    color: var(--title-color);
+   
+}
+.dark .html__progress {
+    background: var(--title-color);
+   
+}
+.dark .html__progress-full {
+    background-color: var(--first-color-alt);
+    border: 2px solid var(--title-color);
+}
+.dark .html__options-list {
+    background-color: var(--text-color);
+    color: #000;
+}
+.dark .html__options-list .html__choice-prefix {
+    background: #ffffffe5;
+    padding: .2rem .7rem;
+    color: #000;
+    border-radius: 7px;
+    font-weight: var(--font-weight-bold);
+    margin-left: -1rem;
+    font-size: var(--h2-font-size);
+}
+
+.dark .correct {
+    background-color: var(--first-color-light);
+}
+
+.dark .incorrect {
+    background-color: red;
+}
+
+
+
+.dark-theme .option__list:hover span {
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
 
 /*=============== Reusable Css Classes ===============*/
 .container {
@@ -188,6 +243,10 @@ h4 {
         background: white;
         border-radius: 50%;
     }
+    .toggle-icon {
+        justify-content: flex-start;
+    }
+    
 @media screen and (max-width: 950px) {
   .nav i {
         cursor: pointer;
@@ -279,30 +338,7 @@ h4 {
     flex-direction: column;
     row-gap: 1rem;
 }
-/*
-.loader {
-    border: 1.6rem solid var(--first-color-light);
-    border-top: 1.6rem solid #020520;
-    border-radius: 50%;
-    width: 12rem;
-    height: 12rem;
-    animation: spin 1.55s linear infinite;
-    margin-top: 10rem;
-    align-items: center;
-    justify-content: center;
-}
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-
-}
-*/
 .the__game-container {
     margin-top: -6rem;
 }
