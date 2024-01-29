@@ -111,6 +111,9 @@ body.dark {
     font-size: var(--small-font-size);
     
 }
+.dark .score__questions {
+    color: #0000008e;
+}
 
 
 .dark-theme .option__list:hover span {
