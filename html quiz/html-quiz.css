@@ -101,7 +101,16 @@ body.dark {
 .dark .incorrect {
     background-color: red;
 }
-
+.dark .btn,.dark .skip {
+    padding: .5rem 1rem;
+    background: #9d25d0;
+    outline: none;
+    border: none;
+    color: #f4f4f4;
+    border-radius: .5rem;
+    font-size: var(--small-font-size);
+    
+}
 
 
 .dark-theme .option__list:hover span {
