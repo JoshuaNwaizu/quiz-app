@@ -113,7 +113,7 @@ choices.forEach((choice) => {
 
 const incrementScore = num => {
     score += num
-    scoreCounter.innerText = `Score: ${score}`
+    scoreCounter.innerText = `Points: ${score}`
 
 }
 
