@@ -104,6 +104,7 @@ body.dark {
 
 .dark .incorrect {
     background-color: red;
+    color: #f4f4f4;
 }
 
 .dark .btn,
