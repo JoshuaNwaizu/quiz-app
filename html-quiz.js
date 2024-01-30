@@ -42,7 +42,7 @@ fetch('questions.json')
     })
 
 //GAME FUNCTIONS
-const CORRECT_BONUS = 10
+const CORRECT_BONUS = 5
 let htmlQuestionsIndex = htmlQuestions.length
 let MAX_QUESTIONS;
 console.log(MAX_QUESTIONS)

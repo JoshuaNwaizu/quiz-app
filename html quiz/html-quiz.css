@@ -53,6 +53,7 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+
 /*=============== VARIABLE DARK THEME ===============*/
 body.dark {
     --title-color: #020520d0;
@@ -67,23 +68,26 @@ body.dark {
 }
 
 
-.dark
-.html__options-list span {
+.dark .html__options-list span {
     color: var(--title-color);
-   
+
 }
+
 .dark .html__progress {
     background: var(--text-color);
-   
+
 }
+
 .dark .html__progress-full {
     background-color: var(--first-color-alt);
     border: 2px solid var(--text-color);
 }
+
 .dark .html__options-list {
     background-color: var(--text-color);
     color: #000;
 }
+
 .dark .html__options-list .html__choice-prefix {
     background: #ffffffe5;
     padding: .2rem .7rem;
@@ -101,7 +105,9 @@ body.dark {
 .dark .incorrect {
     background-color: red;
 }
-.dark .btn,.dark .skip {
+
+.dark .btn,
+.dark .skip {
     padding: .5rem 1rem;
     background: #9d25d0;
     outline: none;
@@ -109,12 +115,16 @@ body.dark {
     color: #f4f4f4;
     border-radius: .5rem;
     font-size: var(--small-font-size);
-    
+
 }
+
 .dark .score__questions {
     color: #0000008e;
 }
 
+.dark .bg-header {
+    background: var(--first-color);
+}
 
 .dark-theme .option__list:hover span {
     color: var(--white-color);
@@ -227,46 +237,52 @@ h4 {
     column-gap: 1rem;
 }
 
-    /**************** Nav toggle icons *******************/
-  .toggle__icons {
-        position: fixed;
-        right: 0;
-        font-size: 1.5rem;
-    }
+/**************** Nav toggle icons *******************/
+.toggle__icons {
+    position: fixed;
+    right: 0;
+    font-size: 1.5rem;
+}
 
-    .toggle__box {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 1.5rem;
-        border: 2px solid var(--first-color-light);
-        width: 2.5rem;
-        border-radius: 12px;
-        background: #9d25d0;
-        border: 3px solid var(--first-color-light);
-        cursor: pointer;
-    }
+.toggle__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 1.5rem;
+    border: 2px solid var(--first-color-light);
+    width: 2.5rem;
+    border-radius: 12px;
+    background: #9d25d0;
+    border: 3px solid var(--first-color-light);
+    cursor: pointer;
+}
 
-    .toggle__circle {
-        height: 1.1rem;
-        width: 1.1rem;
-        margin-left: .2rem;
-        margin-right: .2rem;
-        background: white;
-        border-radius: 50%;
-    }
-    .toggle-icon {
-        justify-content: flex-start;
-    }
-    
+.toggle__circle {
+    height: 1.1rem;
+    width: 1.1rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.toggle-icon {
+    justify-content: flex-start;
+}
+
+.toggle__icons {
+    display: none;
+}
+
 @media screen and (max-width: 950px) {
-  .nav i {
+    .nav i {
         cursor: pointer;
     }
 
     .bg-header {
         background-color: #020520;
         box-shadow: var(--box-shadow);
+        transition: background-color .2s, box-shadow .2s;
     }
 }
 
@@ -345,6 +361,7 @@ h4 {
 .hidden {
     display: none;
 }
+
 .progress-and-options {
     display: flex;
     flex-direction: column;
@@ -368,7 +385,8 @@ h4 {
     margin-top: -1rem;
 }
 
-.btn, .skip {
+.btn,
+.skip {
     padding: .5rem 1rem;
     background: #9d25d0;
     outline: none;
@@ -376,7 +394,7 @@ h4 {
     color: var(--title-color);
     border-radius: .5rem;
     font-size: var(--small-font-size);
-    
+
 }
 
 .correct {
@@ -407,6 +425,7 @@ h4 {
         align-items: center;
         justify-content: space-between;
     }
+
     .html__title {
         font-size: var(--h3-font-size);
         font-weight: var(--font-weight-bold);
@@ -447,6 +466,7 @@ h4 {
         flex-direction: column;
         row-gap: .5rem;
     }
+
     .html__choice-text {
         font-size: var(--smaller-font-size);
     }
@@ -515,8 +535,9 @@ h4 {
     }
 
 }
+
 @media screen and (min-width: 400px) {
-   
+
     .html__title {
         font-size: var(--h2-font-size);
     }
@@ -526,6 +547,7 @@ h4 {
         flex-direction: column;
         row-gap: .5rem;
     }
+
     .html__choice-text {
         font-size: var(--smaller-font-size);
     }
@@ -542,6 +564,7 @@ h4 {
         cursor: pointer;
         transition: .3s;
     }
+
     .correct {
         background-color: var(--title-color)
     }
@@ -562,18 +585,20 @@ h4 {
         color: var(--option-color);
         font-weight: var(--font-weight-medium);
     }
-    
+
 
 }
+
 @media screen and (min-width: 700px) {
     body {
         height: 70vh;
     }
+
     .html__title {
         font-size: var(--bigger-font-size);
     }
 
-   
+
     .html__choice-text {
         font-size: var(--normal-font-size);
     }
@@ -585,6 +610,7 @@ h4 {
     body {
         height: 100vh;
     }
+
     .html__title {
         font-size: var(--h1-font-size);
     }
@@ -592,14 +618,17 @@ h4 {
     .nav {
         margin-inline: 4.5rem;
     }
+
     .the__game-container {
         display: flex;
         column-gap: 3rem;
     }
+
     .progress-and-options,
     .html__options {
         min-width: 50%;
     }
+
     .html__options-list {
         width: 100%;
     }

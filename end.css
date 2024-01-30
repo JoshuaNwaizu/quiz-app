@@ -1,0 +1,24 @@
+body.dark {
+    --title-color: #020520d0;
+    --text-color: #aaaaaa;
+    --body-color: #000;
+    --container-color: hsl(0, 0%, 12%);
+    --box-shadow: 0 1px 11px hsla(0, 0%, 60%);
+    --white-color: hsl(0, 0%, 15%);
+    --first-color: #f4f4f4;
+    --first-color-light: #6ce278;
+
+}
+
+.dark .score__output {
+    background: var(--text-color);
+}
+.dark .score, .dark .score__remains {
+    color: var(--title-color);
+}
+.dark .end-btn {
+    color: #fff;
+}
+.toggle__icons {
+    display: none;
+}
