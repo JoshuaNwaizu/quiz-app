@@ -329,6 +329,7 @@ h4 {
     flex-direction: column;
     row-gap: 1.5rem;
 }
+
 .html__options-container {
     display: flex;
     flex-direction: column;
@@ -467,7 +468,8 @@ h4 {
         justify-content: space-between;
         font-weight: var(--font-weight-bold);
     }
-/*
+
+    /*
     .html__options {
         display: flex;
         flex-direction: column;
@@ -549,11 +551,12 @@ h4 {
         font-size: var(--h2-font-size);
     }
 
+    /*
     .html__options {
         display: flex;
         flex-direction: column;
         row-gap: .5rem;
-    }
+    }*/
 
     .html__choice-text {
         font-size: var(--smaller-font-size);
@@ -634,26 +637,28 @@ h4 {
     .progress-and-options,
     .html__options {
         min-width: 50%;
-        
+
     }
 
     .html__options-list {
         width: 95%;
-      
+
     }
 
-.html__options {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-}
-.html__options-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: .5rem;
-}
-.skip {
-    margin-right: 2rem;
-}
+    .html__options {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .html__options-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+
+    .skip {
+        margin-right: 2rem;
+    }
 
 }
