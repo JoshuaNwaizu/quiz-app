@@ -33,8 +33,7 @@ fetch('questions.json')
         return res.json()
     })
     .then(loadedQuestions => {
-        console.log(loadedQuestions)
-        console.log(loadedQuestions.length);
+        
 
         htmlQuestions = loadedQuestions
         MAX_QUESTIONS = htmlQuestions.length
@@ -54,7 +53,7 @@ const startGame = () => {
     availableQuestions = [...htmlQuestions]
     getNewQuestions()
     game.classList.remove('hidden')
-    loader.classList.add('hidden')
+   
 }
 
 const getNewQuestions = () => {

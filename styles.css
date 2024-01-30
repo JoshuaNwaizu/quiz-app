@@ -80,9 +80,10 @@ body.dark-theme {
 .dark-theme .option__list:hover {
     background-color: var(--text-color);
     color: #000;
-
 }
-
+.dark-theme .toggle__box {
+    border: 3px solid var(--text-color);
+}
 
 
 
