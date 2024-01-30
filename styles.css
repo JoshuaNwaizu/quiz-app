@@ -53,6 +53,7 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+
 /*=============== VARIABLE DARK THEME ===============*/
 body.dark-theme {
     --title-color: #020520d0;
@@ -63,26 +64,31 @@ body.dark-theme {
     --white-color: hsl(0, 0%, 15%);
     --first-color: #f4f4f4;
 }
+
 .dark-theme .option__list {
     background-color: var(--text-color);
     color: #000;
-   
+
 }
+
 .dark-theme .home__description {
     color: #766f6f;
 }
-.dark-theme 
-.option__list span {
+
+.dark-theme .option__list span {
     color: var(--title-color);
 
-   
+
 }
+
 .dark-theme .option__list:hover {
     background: var(--text-color);
 }
+
 .dark-theme .option__list:hover span {
     background: var(--first-color);
 }
+
 .dark-theme .toggle__box {
     border: 3px solid var(--text-color);
 }
@@ -222,13 +228,15 @@ h4 {
     border-radius: 50%;
 }
 
-.toggle__icons i,
+
 .toggle__box {
     cursor: pointer;
 }
+
 .toggle-icon {
     justify-content: flex-start;
 }
+
 #show-text {
     background: #e93f3f;
     padding: 1rem;
@@ -237,6 +245,7 @@ h4 {
     font-size: var(--normal-font-size);
 
 }
+
 @media screen and (max-width: 950px) {
 
     /**************** HOME *******************/
@@ -259,6 +268,7 @@ h4 {
         flex-direction: column;
         row-gap: 1rem;
     }
+
     .home__container {
         display: flex;
         flex-direction: column;
@@ -276,7 +286,7 @@ h4 {
         border-radius: 1rem;
         cursor: pointer;
         transition: .3s;
-        
+
     }
 
     .option__list:hover {
@@ -418,7 +428,7 @@ h4 {
 }
 
 @media screen and (min-width: 540px) {
-  
+
 
     .option__list {
         display: flex;
@@ -470,26 +480,30 @@ h4 {
 }
 
 @media screen and (min-width: 778px) {
-   
+
 
     .html-home {
         margin-top: 7rem;
-       text-align: center;
+        text-align: center;
     }
+
     .home__title {
         font-size: 4rem;
     }
+
     .home__description {
         font-size: var(--h2-font-size);
     }
+
     .home__options {
         width: 800px;
         display: flex;
         margin-top: 2rem;
         align-items: center;
         justify-content: center;
-        
+
     }
+
     .option__list {
         width: 300px;
         justify-content: center;
@@ -532,22 +546,33 @@ h4 {
         justify-content: center;
         margin-inline: 2rem;
     }
-    .home__hero,.home__options {
+
+    .home__hero,
+    .home__options {
         width: 50%;
     }
+
     .option__list {
         width: 90%;
-      
+
     }
 }
+
 @media screen and (min-width: 1424px) {
     .home__container {
-        
+
         column-gap: 3rem;
     }
+
     .option__list {
         width: 60%;
-      
+
+    }
+
+    .home__hero {
+        display: flex;
+        flex-direction: column;
+       row-gap: 3rem;
     }
 
     .end__heading {

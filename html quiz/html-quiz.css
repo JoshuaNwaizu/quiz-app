@@ -327,6 +327,11 @@ h4 {
 .html__options {
     display: flex;
     flex-direction: column;
+    row-gap: 1.5rem;
+}
+.html__options-container {
+    display: flex;
+    flex-direction: column;
     row-gap: .5rem;
 }
 
@@ -389,6 +394,7 @@ h4 {
 .btn,
 .skip {
     padding: .5rem 1rem;
+
     background: #9d25d0;
     outline: none;
     border: none;
@@ -617,7 +623,7 @@ h4 {
     }
 
     .nav {
-        margin-inline: 4.5rem;
+        margin-inline: 7.5rem;
     }
 
     .the__game-container {
@@ -628,9 +634,26 @@ h4 {
     .progress-and-options,
     .html__options {
         min-width: 50%;
+        
     }
 
     .html__options-list {
-        width: 100%;
+        width: 95%;
+      
     }
+
+.html__options {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.html__options-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.skip {
+    margin-right: 2rem;
+}
+
 }
