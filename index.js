@@ -52,3 +52,15 @@ toggle.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+function displayAndHideText() {
+
+    const showText =  document.querySelector('#show-text')
+
+    showText.style.display= 'block'
+
+    setTimeout(() => {
+        showText.style.display = 'none'
+    }, 5000);
+}
+
+window.onload = displayAndHideText
