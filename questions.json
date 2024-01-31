@@ -80,16 +80,6 @@
     "answer": "1"
   },
   {
-    "question": "What does CSS stand for?",
-    "options": {
-      "option1": "Counter Strike: Source",
-      "option2": "Computer Style Sheets",
-      "option3": "Creative Style Sheets",
-      "option4": "Cascading Style Sheets"
-    },
-    "answer": "4"
-  },
-  {
     "question": "In JavaScript, what is a variable?",
     "options": {
       "option1": "A container for storing data values",
@@ -160,14 +150,14 @@
     "answer": "3"
   },
   {
-    "question": "What does CSS stand for?",
+    "question": "What is the purpose of the CSS 'clip-path' property?",
     "options": {
-      "option1": "Counter Strike: Source",
-      "option2": "Computer Style Sheets",
-      "option3": "Creative Style System",
-      "option4": "Cascading Style Sheets"
+      "option1": "To specify the spacing between elements.",
+      "option2": "To apply a clipping mask to an element, hiding portions of the element based on a specified shape.",
+      "option3": "To control the positioning of an element relative to its parent.",
+      "option4": "To adjust the opacity of an element."
     },
-    "answer": "4"
+    "answer": "2"
   },
   {
     "question": "Which of the following is a CSS preprocessor?",
@@ -230,26 +220,6 @@
     "answer": "1"
   },
   {
-    "question": "What does the acronym API stand for?",
-    "options": {
-      "option1": "Application Programming Interface",
-      "option2": "Advanced Programming Integration",
-      "option3": "Automated Program Interaction",
-      "option4": "All-Purpose Interaction"
-    },
-    "answer": "1"
-  },
-  {
-    "question": "What does CSS stand for?",
-    "options": {
-      "option1": "Counter Strike: Source",
-      "option2": "Computer Style Sheets",
-      "option3": "Creative Style System",
-      "option4": "Cascading Style Sheets"
-    },
-    "answer": "4"
-  },
-  {
     "question": "In JavaScript, what is the purpose of the 'getElementById()' function?",
     "options": {
       "option1": "To access an HTML element by its class",
@@ -278,16 +248,6 @@
       "option4": "jQuery"
     },
     "answer": "2"
-  },
-  {
-    "question": "What does the acronym API stand for?",
-    "options": {
-      "option1": "Application Programming Interface",
-      "option2": "Advanced Programming Integration",
-      "option3": "Automated Program Interaction",
-      "option4": "All-Purpose Interaction"
-    },
-    "answer": "1"
   },
   {
     "question": "What is the box model in CSS used for?",
@@ -418,5 +378,125 @@
       "option4": "To create a user input form"
     },
     "answer": "4"
+  },
+  {
+    "question": "console.log(3 === '3') - What does the following JavaScript code output?",
+    "options": {
+      "option1": "true",
+      "option2": "false",
+      "option3": "undefined",
+      "option4": "TypeError"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What is the purpose of the JavaScript 'map' function?",
+    "options": {
+      "option1": "To create a new array with the results of calling a provided function on every element in the array.",
+      "option2": "To check if an array includes a certain value.",
+      "option3": "To remove the first element from an array and return that element.",
+      "option4": "To filter elements in an array based on a provided function."
+    },
+    "answer": "1"
+  },
+  {
+    "question": "Which of the following statements about the 'let' keyword in JavaScript is true?",
+    "options": {
+      "option1": "It is used for function declarations.",
+      "option2": "It has block-level scope.",
+      "option3": "It is hoisted to the top of the script.",
+      "option4": "It cannot be reassigned after declaration."
+    },
+    "answer": "2"
+  },
+  {
+    "question": "console.log(2 + '2') - What will be the output of the following code?",
+    "options": {
+      "option1": "1",
+      "option2": "2",
+      "option3": "3",
+      "option4": "4"
+    },
+    "answer": "2"
+  },
+  {
+    "question": "console.log(typeof NaN === 'number') - What will be the output of the following code?",
+    "options": {
+      "option1": "true",
+      "option2": "false",
+      "option3": "undefined",
+      "option4": "null"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "In JavaScript, what is the purpose of the 'try', 'catch', and 'finally' blocks?",
+    "options": {
+      "option1": "To create loops.",
+      "option2": "To handle exceptions and errors.",
+      "option3": "To define functions.",
+      "option4": "To declare variables."
+    },
+    "answer": "2"
+  },
+  {
+    "question": "What does the 'NaN' stand for in JavaScript?",
+    "options": {
+      "option1": "Not a Number",
+      "option2": "Negative And Null",
+      "option3": "No Available Number",
+      "option4": "None of the Above"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What is the purpose of the 'bind' method in JavaScript?",
+    "options": {
+      "option1": "To create a new array.",
+      "option2": "To permanently attach a function to a specific object.",
+      "option3": "To perform mathematical operations.",
+      "option4": "To iterate over an object's properties."
+    },
+    "answer": "2"
+  },
+  {
+    "question": "Which of the following is a valid way to declare a variable in JavaScript?",
+    "options": {
+      "option1": "let 123variable = 10;",
+      "option2": "const variable! = 5;",
+      "option3": "var my_variable = 8;",
+      "option4": "const -variable = 7;"
+    },
+    "answer": "3"
+  },
+  {
+    "question": "Which operator is used to check both the value and the type in JavaScript?",
+    "options": {
+      "option1": "==",
+      "option2": "===",
+      "option3": "!=",
+      "option4": "!=="
+    },
+    "answer": "2"
+  },
+  {
+    "question": "Which CSS property is used to add rounded corners to an element?",
+    "options": {
+      "option1": "border-radius",
+      "option2": "corner-style",
+      "option3": "rounded-corners",
+      "option4": "corner-radius"
+    },
+    "answer": "1"
+  },
+  {
+    "question": "What is the purpose of the CSS 'grid-template-areas' property?",
+    "options": {
+      "option1": "To define the alignment of grid items within a grid container.",
+      "option2": "To specify the dimensions of the grid tracks in a grid container.",
+      "option3": "To create named grid areas within a grid container, allowing for more complex layout designs.",
+      "option4": "To adjust the spacing between grid items in a grid container."
+    },
+    "answer": "3"
   }
 ]
