@@ -240,12 +240,12 @@
     "answer": "1"
   },
   {
-    "question": "Which of the following is a CSS preprocessor?",
+    "question": "What is the purpose of the CSS 'clip-path' property?",
     "options": {
-      "option1": "Bootstrap",
-      "option2": "Sass",
-      "option3": "React",
-      "option4": "jQuery"
+      "option1": "To specify the spacing between elements.",
+      "option2": "To apply a clipping mask to an element, hiding portions of the element based on a specified shape.",
+      "option3": "To control the positioning of an element relative to its parent.",
+      "option4": "To adjust the opacity of an element."
     },
     "answer": "2"
   },
@@ -412,10 +412,10 @@
   {
     "question": "console.log(2 + '2') - What will be the output of the following code?",
     "options": {
-      "option1": "1",
-      "option2": "2",
-      "option3": "3",
-      "option4": "4"
+      "option1": "4",
+      "option2": "22",
+      "option3": "2'2'",
+      "option4": "22'4'"
     },
     "answer": "2"
   },
