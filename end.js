@@ -10,13 +10,14 @@ const mostRecentScore = localStorage.getItem('mostRecentScore'),
     finalScoreText = localStorage.getItem('finalScore'),
     selectedThemeEnd = localStorage.getItem('selected-theme'),
     selectedIconEnd = localStorage.getItem('selected-icon')
+   
     
 
 
 
 const theFinalText = finalScoreText
 scoreRemains.innerText = `Got ${theFinalText} out of ${MAX_QUESTIONS} questions`
-finalScore.innerText = mostRecentScore
+finalScore.innerText = mostRecentScore + 1
 
 if (selectedIconEnd) {
     navBox.classList.toggle(selectedIconEnd)

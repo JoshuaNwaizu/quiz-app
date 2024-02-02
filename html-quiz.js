@@ -45,7 +45,7 @@ fetch('questions.json')
 const CORRECT_BONUS = 5
 let htmlQuestionsIndex = htmlQuestions.length
 let MAX_QUESTIONS;
-console.log(MAX_QUESTIONS)
+
 const startGame = () => {
     questionCounter = 0
     score = 0
@@ -54,6 +54,7 @@ const startGame = () => {
     getNewQuestions()
     game.classList.remove('hidden')
    
+    localStorage.setItem('avaliableQuestions', availableQuestions)
 }
 
 const getNewQuestions = () => {
