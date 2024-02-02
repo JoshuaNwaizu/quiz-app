@@ -37,8 +37,9 @@ fetch('questions.json')
 
         htmlQuestions = loadedQuestions
         MAX_QUESTIONS = htmlQuestions.length
-
+        
         startGame()
+      
     })
 
 //GAME FUNCTIONS
@@ -53,8 +54,8 @@ const startGame = () => {
     availableQuestions = [...htmlQuestions]
     getNewQuestions()
     game.classList.remove('hidden')
-   
-    localStorage.setItem('avaliableQuestions', availableQuestions)
+    
+  
 }
 
 const getNewQuestions = () => {
@@ -120,6 +121,9 @@ const incrementScore = num => {
 
 const incrementFinal = num => {
     finalScore += num
+    if(htmlQuestions.length === htmlQuestions) {
+        finalScore++
+    }
     console.log(finalScore)
 
 }
