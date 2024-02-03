@@ -121,7 +121,7 @@ const incrementScore = num => {
 
 const incrementFinal = num => {
     finalScore += num
-    if(htmlQuestions.length === htmlQuestions) {
+    if(htmlQuestions.length) {
         finalScore++
     }
     console.log(finalScore)

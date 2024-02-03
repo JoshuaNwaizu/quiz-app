@@ -342,7 +342,7 @@
   {
     "question": "What is the purpose of the JavaScript 'splice' method?",
     "options": {
-      "option1": "To add elements to an array",
+      "option1": "To move elements to an array",
       "option2": "To remove elements from an array",
       "option3": "To sort the elements of an array",
       "option4": "To reverse the order of an array"
@@ -362,9 +362,9 @@
   {
     "question": "Which JavaScript keyword is used to declare a variable?",
     "options": {
-      "option1": "let",
-      "option2": "const",
-      "option3": "var",
+      "option1": "def",
+      "option2": "function",
+      "option3": "let",
       "option4": "variable"
     },
     "answer": "3"
@@ -464,7 +464,7 @@
     "options": {
       "option1": "let 123variable = 10;",
       "option2": "const variable! = 5;",
-      "option3": "var my_variable = 8;",
+      "option3": "let my_variable = 8;",
       "option4": "const -variable = 7;"
     },
     "answer": "3"
